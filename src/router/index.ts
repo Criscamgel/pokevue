@@ -9,9 +9,9 @@ const router = createRouter({
       component: () => import('@/views/welcome/welcomeView.vue'),
     },
     {
-      path: '/search',
-      name: 'search',
-      component: () => import('@/views/search/searchView.vue'),
+      path: '/pokedesk',
+      name: 'pokedesk',
+      component: () => import('@/views/pokedesk/pokedeskView.vue'),
     },
   ],
 })

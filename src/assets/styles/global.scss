@@ -1,0 +1,33 @@
+@import '@/assets/styles/fonts.scss';
+@import '@/assets/styles/custom-bootstrap.scss';
+@import '@/assets/styles/colors.scss';
+
+* {
+  font-family: 'Lato', sans-serif;
+  background-color: $background-color;
+}
+
+//Text Styles
+.title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.normalText{
+  color: $gray-text;
+  font-size: 1.2rem;
+}
+
+//Buttons
+.btnFirts{
+  background-color: $color-pokeRed;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  transform: scale(1.5);
+  cursor: pointer;
+  &:hover {
+    background-color: $color-pokePink;
+  }
+}

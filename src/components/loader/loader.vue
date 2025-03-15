@@ -1,4 +1,4 @@
-<script lang="ts" src="./welcomeView.ts" />
+<script lang="ts" src="./loader.ts" />
 
 <template>
     <div class="my-sm-5 my-md-5 my-lg-3 my-5 mx-5">
@@ -18,7 +18,7 @@
                 <div class="col-12 col-md-6 text-center">
                     <p class="title">Welcome to Pokédex</p>
                     <p class="normalText">The digital encyclopedia created by Professor Oak is an invaluable tool to Trainers in the Pokémon world.</p>
-                    <button class="btnFirts m-5" @click="() => { router.push({ name: 'pokedesk' }) }">Get started</button>
+                    <button class="btnFirts m-5">Get started</button>
                 </div>
             </div>
         </div>
@@ -26,4 +26,4 @@
     </div>
 </template>
 
-<style lang="scss" src="./welcomeView.scss" scoped />
+<style lang="scss" src="./loader.scss" scoped />
