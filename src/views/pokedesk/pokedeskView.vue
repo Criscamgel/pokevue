@@ -6,6 +6,10 @@
         <h1>Pokedesk</h1>
     </section>
     </div>
+
+    <loaderComponent 
+      :on-show="showLoader"  
+    />
 </template>
 
 <style lang="scss" src="./pokedeskView.scss" scoped />
