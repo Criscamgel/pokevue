@@ -1,4 +1,6 @@
 import { defineComponent, ref, onMounted } from 'vue'
+import { usePokemonsStore } from '@/stores/pokemons'
+
 import loaderComponent from '@/components/loader/loader.vue'
 
 //Assets
@@ -11,11 +13,14 @@ export default defineComponent({
   },
   setup() {
     const pikachuImg = ref(pikachu)
-    
-    const showLoader = ref(true)
+
+    const { _getList } = usePokemonsStore()
+    onMounted(() => {
+      _getList()
+    })
+
     return {
       pikachuImg,
-      showLoader
     }
   },
 })

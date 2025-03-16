@@ -7,9 +7,7 @@
     </section>
     </div>
 
-    <loaderComponent 
-      :on-show="showLoader"  
-    />
+    <loaderComponent />
 </template>
 
 <style lang="scss" src="./pokedeskView.scss" scoped />
